@@ -16,7 +16,7 @@ import com.example.OfficeManage.Service.DataService;
 
 @RestController
 @RequestMapping("/data")
-@CrossOrigin("**")
+@CrossOrigin("http://localhost:4200/")
 public class DataController {
 	@Autowired
 	private DataService dsr;
