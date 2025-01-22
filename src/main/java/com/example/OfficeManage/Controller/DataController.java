@@ -20,7 +20,7 @@ import com.example.OfficeManage.Service.DataService;
 public class DataController {
 	@Autowired
 	private DataService dsr;
-	@PostMapping
+	@PostMapping("/insert")
 	public ResponseEntity<DataSkm>savedata(@RequestBody DataSkm ds){
 		return dsr.saveData(ds);
 		
