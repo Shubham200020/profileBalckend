@@ -16,6 +16,7 @@ public class DataSkm {
 	public String phone;
 	@Column(length = 50)
 	public String subject;
+	public String email;
 	@Column(length = 220)
 	public String messege;
 	
@@ -24,15 +25,15 @@ public class DataSkm {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DataSkm(Integer id, String name, String phone, String subject, String messege) {
+	public DataSkm(Integer id, String name, String phone, String subject, String email, String messege) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.phone = phone;
 		this.subject = subject;
+		this.email = email;
 		this.messege = messege;
 	}
-
 	public Integer getId() {
 		return id;
 	}
@@ -68,11 +69,15 @@ public class DataSkm {
 	public String getMessege() {
 		return messege;
 	}
-
 	public void setMessege(String messege) {
 		this.messege = messege;
 	}
-	
-	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
 }
