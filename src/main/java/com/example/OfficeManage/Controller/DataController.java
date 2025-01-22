@@ -16,7 +16,7 @@ import com.example.OfficeManage.Service.DataService;
 
 @RestController
 @RequestMapping("/data")
-@CrossOrigin("https://skmprofile.netlify.app/")
+@CrossOrigin("https://skmprofile.netlify.app")
 public class DataController {
 	@Autowired
 	private DataService dsr;
