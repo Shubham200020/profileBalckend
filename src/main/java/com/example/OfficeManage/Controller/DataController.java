@@ -35,4 +35,9 @@ public class DataController {
 		return dsr.deleteById(ds);
 		
 	}
+	@GetMapping("/displayData")
+	public String Display(){
+		return "Hello User";
+		
+	}
 }
