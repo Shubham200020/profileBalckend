@@ -17,7 +17,7 @@ import com.example.OfficeManage.Service.DataService;
 
 @RestController
 @RequestMapping("/data")
-@CrossOrigin("https://skmprofile.netlify.app")
+@CrossOrigin("http://localhost:4200")
 public class DataController {
 	@Autowired
 	private DataService dsr;
@@ -31,7 +31,7 @@ public class DataController {
 		return dsr.getData();
 		
 	}
-	@GetMapping("/delete")
+	@PostMapping("/delete")
 	public ResponseEntity<DataSkm>deleteData(@RequestBody DataSkm ds){
 		return dsr.deleteById(ds);
 		
