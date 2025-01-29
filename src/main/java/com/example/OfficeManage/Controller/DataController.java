@@ -17,7 +17,7 @@ import com.example.OfficeManage.Service.DataService;
 
 @RestController
 @RequestMapping("/data")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://skmprofile.netlify.app")
 public class DataController {
 	@Autowired
 	private DataService dsr;
@@ -36,9 +36,5 @@ public class DataController {
 		return dsr.deleteById(ds);
 		
 	}
-	@GetMapping("/displayData")
-	public String Display(){
-		return "Hello User";
-		
-	}
+
 }
