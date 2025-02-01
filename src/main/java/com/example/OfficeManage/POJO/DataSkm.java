@@ -1,23 +1,14 @@
 package com.example.OfficeManage.POJO;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-@Entity
+import org.springframework.data.mongodb.core.mapping.Document;
+@Document
 public class DataSkm {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public Integer id;
-	@Column(length = 50)
 	public String name;
-	@Column(length = 10)
+	
 	public String phone;
-	@Column(length = 50)
+	
 	public String subject;
 	public String email;
-	@Column(length = 220)
+
 	public String messege;
 	
 	public DataSkm() {
@@ -25,21 +16,14 @@ public class DataSkm {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DataSkm(Integer id, String name, String phone, String subject, String email, String messege) {
+	public DataSkm( String name, String phone, String subject, String email, String messege) {
 		super();
-		this.id = id;
+		
 		this.name = name;
 		this.phone = phone;
 		this.subject = subject;
 		this.email = email;
 		this.messege = messege;
-	}
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
 	}
 
 	public String getName() {
