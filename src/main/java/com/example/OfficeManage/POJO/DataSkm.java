@@ -1,14 +1,16 @@
 package com.example.OfficeManage.POJO;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-@Document
+@Document()
 public class DataSkm {
+	
 	public String name;
 	
 	public String phone;
 	
 	public String subject;
 	public String email;
-
+	
 	public String messege;
 	
 	public DataSkm() {
