@@ -3,7 +3,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 @Document()
 public class DataSkm {
-	
+	@Id
+	public String id;
 	public String name;
 	
 	public String phone;
@@ -18,15 +19,31 @@ public class DataSkm {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DataSkm( String name, String phone, String subject, String email, String messege) {
+	
+
+	public DataSkm(String id, String name, String phone, String subject, String email, String messege) {
 		super();
-		
+		this.id = id;
 		this.name = name;
 		this.phone = phone;
 		this.subject = subject;
 		this.email = email;
 		this.messege = messege;
 	}
+
+
+
+	public String getId() {
+		return id;
+	}
+
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
 
 	public String getName() {
 		return name;
