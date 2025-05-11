@@ -18,9 +18,6 @@ public class DataSkm {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-	
-
 	public DataSkm(String id, String name, String phone, String subject, String email, String messege) {
 		super();
 		this.id = id;
@@ -30,15 +27,9 @@ public class DataSkm {
 		this.email = email;
 		this.messege = messege;
 	}
-
-
-
 	public String getId() {
 		return id;
 	}
-
-
-
 	public void setId(String id) {
 		this.id = id;
 	}
